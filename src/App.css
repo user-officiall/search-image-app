@@ -1,9 +1,12 @@
-.formSection {
+body{
+  background-color: #797979;
+}
+.formSection{
   display: flex;
   justify-content: center;
 }
 .formSection > input {
-  font-size: 20px;
+  font-size:20px;
   padding: 0 1rem;
   line-height: 2rem;
   border-radius: 50px;
@@ -18,30 +21,35 @@
   background-color: #000;
   color: #00ffff;
 }
-.title {
+.title{
   font-family: system-ui, sans-serif;
   text-align: center;
 }
-.result {
+.result{
   padding: 90px;
   display: grid;
   grid-template-columns: auto auto auto;
 }
-.result > .card {
-  display: flex;
+.card{
+  width: 350px;
 }
-.card > .resultImage {
+
+.card .resultImage {
   flex: 100% 1;
-  margin-top: 1rem;
+  margin: 0.5rem;
   border-radius: 20px;
   width: 350px;
   padding: 10px;
   cursor: pointer;
 }
-.card > .username {
+.card .username{
+  width: 100%;
   text-align: center;
   font-family: system-ui, sans-serif;
 }
+
+
+
 
 /* 1mm = 3.8px
    1cm = 38px
