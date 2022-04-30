@@ -1,38 +1,54 @@
-.App {
+.formSection {
+  display: flex;
+  justify-content: center;
+}
+.formSection > input {
+  font-size: 20px;
+  padding: 0 1rem;
+  line-height: 2rem;
+  border-radius: 50px;
+  background-color: #fff;
+  margin-right: 20px;
+}
+.formSection > button {
+  font-size: 20px;
+  padding: 0 1rem;
+  line-height: 2rem;
+  border-radius: 50px;
+  background-color: #000;
+  color: #00ffff;
+}
+.title {
+  font-family: system-ui, sans-serif;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.result {
+  padding: 90px;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.result > .card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.card > .resultImage {
+  flex: 100% 1;
+  margin-top: 1rem;
+  border-radius: 20px;
+  width: 350px;
+  padding: 10px;
+  cursor: pointer;
+}
+.card > .username {
+  text-align: center;
+  font-family: system-ui, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* 1mm = 3.8px
+   1cm = 38px
+   1pt = 4/3 px
+   1pc = 16px
+   1em = 16px
+   1rem = 16px
+   1fr = 225px
+   1vw = 1%
+*/
